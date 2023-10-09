@@ -5,7 +5,7 @@ provider "google" {
 
 resource "google_dataflow_job" "my_job" {
   name              = "my-job"
-  template_gcs_path = "gs://path/to/your/template"
+  template_gcs_path = "gs://dataflow-templates/latest/Word_Count"
   temp_gcs_location = "gs://path/to/your/temp/location"
   input_file        = "gs://dataflow-samples/shakespeare/kinglear.txt"
   output_path       = "gs://path/to/your/output"

@@ -1,0 +1,23 @@
+
+we had collected the commands for reading info from zk, including zk data reading and zk admin info reading commands, not include write commands. though commands are ready, we fail to inspect zk with these commands, as L1 team failed to authenticate with kerberos with knint
+
+commands as below:
+User data Commands:
+get <path>: Retrieve data and metadata for a znode.
+ls <path>: List child znodes of a path.
+ls2 <path>: List child znodes and stat info.
+stat <path>: Get znode status.
+getAcl <path>: Get ACLs for a znode.
+sync <path>: Sync znode view with leader.
+
+Admin Commands:
+ruok: Check server health ("imok" if healthy).
+srvr: Get server stats.
+stat: Get brief server and clients info.
+mntr: Monitor variables for cluster health.
+cons: List all client connections.
+envi: Output server environment info.
+wchs: Watch summary on the server.
+wchc: Watches by session.
+wchp: Watches by path.
+dump: Sessions and ephemeral nodes (leader only).
